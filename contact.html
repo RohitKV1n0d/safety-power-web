@@ -23,6 +23,24 @@
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <style>
+         .submit-new{
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+            /* click pointer */
+            cursor: pointer;
+         }
+      </style>
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -71,7 +89,7 @@ THERE WE DIFFER</span>
                <div class="row">
                   <div class="col-xl-4 col-lg-3">
                      <div class="header__logo-overlay">
-                        <a href="index.html"><img style="width:85%;" src="assets/img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img style="width:85%; margin: 10px;" src="assets/img/logo.png" alt="logo"></a>
                      </div>
                   </div>
                   <div class="col-xl-8 col-lg-9">
@@ -81,7 +99,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-location-pin"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="https://goo.gl/maps/2McRmWEFCW8nj9p16" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
+                              <h4><a href="https://goo.gl/maps/S3aZSwDtRBrAiTZj9" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
                               <span>Contact Us</span>
                            </div>
                         </div>
@@ -90,7 +108,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-telephone-call"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="tel:+78690989067">0505634247/ 0543397992</a></h4>
+                              <h4><a href="tel:+0505634247">0505634247/ 0543397992</a></h4>
                               <span>Get Support</span>
                            </div>
                         </div>
@@ -250,8 +268,9 @@ Abudhabi, UAE</a>
                      </div>
                      <h5 class="contact__title mb-25">Email Address</h5>
                      <div class="contact__text">
-                        <p><a href="https://wphix.com/cdn-cgi/l/email-protection#0f666169604f786a6d626e6663216c6062"><span class="__cf_email__" data-cfemail="f49d9a929bb483919699959d98da979b99">[email&#160;protected]</span></a></p>
-                        <p><a href="https://wphix.com/cdn-cgi/l/email-protection#dbb1b4b9a89bacbeb9a8b2afbeb3b2b5afa8f5b8b4b6"><span class="__cf_email__" data-cfemail="42282d203102352720312b36272a2b2c36316c212d2f">[email&#160;protected]</span></a></p>
+                        <p><a href="mailto:info@safetypoweruae.com"><span class="__cf_email__" >info@safetypoweruae.com</span></a></p>
+                        <p><a href="mailto:sales@safetypoweruae.com"><span class="__cf_email__" >sales@safetypoweruae.com</span></a></p>
+                       
                      </div>
                      <div class="contact__button mt-30">
                         <a href="https://wphix.com/cdn-cgi/l/email-protection#a3c9ccc1d0e3d4c6c1d0cad7c6cbcacdd7d08dc0ccce" class="tp-btn-white">Email Us <i class="fa-light fa-arrow-right-long"></i></a>
@@ -265,8 +284,8 @@ Abudhabi, UAE</a>
                      </div>
                      <h5 class="contact__title mb-25">Phone Number</h5>
                      <div class="contact__text">
-                        <p><a href="tel:+78923656825">789. 236. 568. 25</a></p>
-                        <p><a href="tel:+7892516563">789 (125) 165 63</a></p>
+                        <p><a href="tel:+78923656825">+971 50 563 4247</a></p>
+                        <p><a href="tel:+7892516563">+971 54 339 7992</a></p>
                      </div>
                      <div class="contact__button mt-30">
                         <a href="tel:+7892516563" class="tp-btn-white">Call Us <i class="fa-light fa-arrow-right-long"></i></a>
@@ -309,7 +328,7 @@ Abudhabi, UAE</a>
          <div class="container">
             <div class="contact__form">
                <div class="container">
-                  <div class="row">
+                  <div class="row" id="from-available">
                      <div class="col-lg-6">
                         <div class="section__wrapper mb-45">
                            <h4 class="section__title">We can take your business to the next level.</h4>
@@ -319,21 +338,21 @@ Abudhabi, UAE</a>
                         </div>
                      </div>
                      <div class="col-xl-12">
-                        <form id="contact-form" action="https://wphix.com/html/dustrilox/dustrilox/mail.php" method="POST">
+                        <form id="contact-form" action="" method="POST">
                            <div class="row">
                               <div class="col-lg-6">
                                  <div class="contact-filed mb-20">
-                                    <input type="text" name="name" placeholder="Enter your name here">
+                                    <input type="text" name="entry.1795119861" placeholder="Enter your name here">
                                 </div>
                               </div>
                               <div class="col-lg-6">
                                  <div class="contact-filed contact-icon-mail mb-20">
-                                    <input email="text" name="email" placeholder="Enter email address here">
+                                    <input email="text" name="entry.1578494257" placeholder="Enter email address here">
                                 </div>
                               </div>
                            </div>
                            <div class="contact-filed contact-icon-message mb-25">
-                              <textarea placeholder="Enter message here" name="message"></textarea>
+                              <textarea placeholder="Enter message here" name="entry.1839014479"></textarea>
                           </div>
                           <div class="contact__form-agree  d-flex align-items-center mb-20">
                               <input name="checkbox" class="e-check-input" type="checkbox" id="e-agree">
@@ -342,9 +361,22 @@ Abudhabi, UAE</a>
                            <div class="form-submit text-center">
                                <button class="tp-btn" type="submit">Submit Request</button>
                            </div>
-                           <p class="ajax-response"></p>
+                           <p class="custom-ajax-response"></p>
                        </form>
+                      
                      </div>
+                  </div>
+                  <div class="row" id="form-submited-thanks">
+                     <!-- Just show Thank you for Submitting -->
+                     <div class="col-lg-12">
+                        <div class="section__wrapper mb-45">
+                           <h4 class="section__title">Thank you for Submitting!!</h4>
+                                          <a class="submit-new" onclick="ViewContactForm()">Submit a new Enquiry?</a>
+                           <div class="r-text">
+                              <span>contact</span>
+                           </div>
+                        </div>
+                     </div>   
                   </div>
                </div>
             </div>
@@ -355,7 +387,7 @@ Abudhabi, UAE</a>
       <!-- contact__map start -->
       <section class="contact__map">
          <div class="contact__map-wrap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3646.6343133793907!2d52.8182222!3d23.937999999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDU2JzE2LjgiTiA1MsKwNDknMDUuNiJF!5e0!3m2!1sen!2sin!4v1689704147246!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1084.151984036859!2d52.818385976433504!3d23.937867118319257!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5d37c45e3120b7%3A0x980c8bf9002c1df6!2sSAFETY%20POWER%20GENERAL%20TRADIND%20EST.!5e0!3m2!1sen!2sin!4v1693009186361!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              <div class="contact__map-icon">
                  
                   <img src="assets/img/bg/contact-icon-bg.png" alt="">
@@ -466,6 +498,69 @@ Abudhabi, UAE</a>
       <script src="assets/js/jquery.appear.js"></script>
       <script src="assets/js/jquery.knob.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         $(document).ready(function(){
+            // hide from-submited-thanks
+            $('#form-submited-thanks').hide();
+            $('#contact-form').submit(function(e) {
+               e.preventDefault();
+               // if e-agree checkbox is not checked
+               if (!$('#e-agree').is(':checked')) {
+                  // set custom-ajax-response with error message
+                  $('.custom-ajax-response').html('<div class="alert alert-danger">Please agree to the terms and conditions!</div>');
+                  return false;
+               }
+               $.ajax({
+                     url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfYHPmgt4ojF29EbGnvdi_NDfzNK9n8c-MgZ2jix167y6Esqw/formResponse",
+                     method: "POST",
+                     data: $(this).serialize(),
+                     dataType: "xml",
+                     statusCode: {
+                        0: function() {
+                           // Success message
+                           // set custom-ajax-response with success message
+                           $('.custom-ajax-response').html('<div class="alert alert-success">Form submitted successfully!</div>');
+                           // hide from-available
+                           $('#from-available').hide();
+                           $('#form-submited-thanks').show();
+
+                        },
+                        200: function() {
+                           // Success Message 
+                           // set custom-ajax-response with success message
+                           $('.custom-ajax-response').html('<div class="alert alert-success">Form submitted successfully!</div>');
+                           // hide from-available
+                           $('#form-submited-thanks').show();
+                           $('#from-available').hide();
+                        },
+                        404: function() {
+                           // Error Message
+                           // set custom-ajax-response with error message
+                           $('.custom-ajax-response').html('<div class="alert alert-danger">Error submitting form!</div>');
+                        },
+                        500: function() {
+                           // Error Message
+                           // set custom-ajax-response with error message
+                           $('.custom-ajax-response').html('<div class="alert alert-danger">Error submitting form!</div>');
+                        }
+                     }
+               });
+            });
+         });
+
+         // ViewContactForm function
+         function ViewContactForm() {
+            // hide form-submited-thanks
+            $('#form-submited-thanks').hide();
+            // show from-available
+            // clear form
+            $('#contact-form')[0].reset();
+            // set custom-ajax-response with empty
+            $('.custom-ajax-response').html('');
+            $('#from-available').show();
+         }
+
+      </script>
    </body>
 
 <!-- Mirrored from wphix.com/html/dustrilox/dustrilox/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 May 2023 03:52:43 GMT -->

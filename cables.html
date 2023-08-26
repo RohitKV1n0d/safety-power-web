@@ -25,6 +25,39 @@
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <style>
+         /* external css: flickity.css */
+         /* external css: flickity.css */
+         .carousel {
+            background: #fafafa00;
+            margin-top : 35px;
+            margin-bottom: 30px;
+         }
+
+         .carousel-cell {
+            width: 100%;
+            height: 300px; /* Set the desired height here */
+            overflow: hidden; /* This will ensure images exceeding the dimensions will be hidden */
+            border-radius: 10px;
+            position: relative;
+         }
+
+         .carousel-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .font-weight-bold{
+            font-weight: 700;
+         }
+
+         
+      </style>
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -73,7 +106,7 @@ THERE WE DIFFER</span>
                <div class="row">
                   <div class="col-xl-4 col-lg-3">
                      <div class="header__logo-overlay">
-                        <a href="index.html"><img style="width:85%;" src="assets/img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img style="width:85%; margin: 10px;" src="assets/img/logo.png" alt="logo"></a>
                      </div>
                   </div>
                   <div class="col-xl-8 col-lg-9">
@@ -83,7 +116,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-location-pin"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="https://goo.gl/maps/2McRmWEFCW8nj9p16" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
+                              <h4><a href="https://goo.gl/maps/S3aZSwDtRBrAiTZj9" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
                               <span>Contact Us</span>
                            </div>
                         </div>
@@ -92,7 +125,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-telephone-call"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="tel:+78690989067">0505634247/ 0543397992</a></h4>
+                              <h4><a href="tel:+0505634247">0505634247/ 0543397992</a></h4>
                               <span>Get Support</span>
                            </div>
                         </div>
@@ -283,30 +316,59 @@ Abudhabi, UAE</a>
      
 
       <!-- fact__area start -->
-    <section class="fact__area fact__bg pt-120 pb-120">
+      <section class="fact__area fact__bg pt-120 pb-120">
          <div class="container">
             <div class="row">
                <div class="col-xl-6 col-lg-6">
-                  <div class="fact__image w-img">
-                     <img src="assets/img/fact/fact-image3.jpg" alt="fact-img">
+                  <div class="carousel"
+                           data-flickity='{ "draggable": true ,"lazyLoad": 1, "wrapAround": true, "autoPlay": 1500 }'> 
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/CTG/ctg0.png" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/CTG/ctg1.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/CTG/ctg2.webp" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/CTG/ctg3.jpg" alt="fact-img">
+                     </div>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="fact__info">
                      <div class="section__wrapper section__wrapper-3 mb-70">
-                        <h4 class="section__title">Cables, trays, gratings, etc. 
- </h4>
-						<P> <p>Cables, trays, gratings, and similar components are commonly used in industrial settings to manage and organize electrical cables, provide support and protection, and ensure a safe working environment.</p>
+                        <h4 class="section__title">Safety Power UAE: Electrifying Excellence - Cables, Trays, Gratings & Beyond</h4>
+                        <p class="lead">In the intricate web of electrical and industrial setups, the silent protagonists ensuring organization, support, and protection are the cables, trays, and gratings. As pathways for power and communication, these components play a pivotal role. Safety Power UAE emerges as the trusted beacon for providing these integral components across the expansive landscape of the GCC region.</p>
+                        
                         <div class="r-text">
-                       
+                          
                         </div>
                      </div>
                      
+                     
                   </div>
                </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <h3  style="color: rgba(255, 239, 218, 0.633);">Cables: <span style="font-size: 25px;"> Power's Pulse and Pathway</span></h3>
+                     <p style="color: rgba(255, 255, 255, 0.589);">Cables are more than just conduits for electrical energy. They are the lifelines that power industries, homes, and innovations. Whether it's transmitting data or electrifying machinery, cables lay the foundation for the modern world's myriad functions.</p>
+                  </div>
+                  <div class="col-md-6">
+                     <h3  style="color: rgba(255, 239, 218, 0.633);">Trays & Gratings: <span style="font-size: 25px;"> The Unseen Support System</span></h3>
+                     <p style="color: rgba(255, 255, 255, 0.589);">Behind the organized façade of any complex wiring system lie the unsung heroes - trays and gratings. Their purpose extends beyond mere organization. They provide the crucial support and protection that ensure the underlying systems function optimally, safeguarding them from potential external hazards.</p>
+                  
+                  </div>
+               </div>
+               <h4 style="color: rgba(255, 239, 218, 0.633);">The Safety Power Assurance</h4>
+               <p style ="color: rgba(255, 255, 255, 0.589);">Navigating the electrifying avenues of the industry, Safety Power UAE stands tall, with quality as its guiding light and commitment as its cornerstone. Our offering isn't just about components; it's about the assurance of efficiency, safety, and excellence.
+
+                  For all your needs concerning cables, trays, gratings, and more in the UAE and GCC regions, align with Safety Power UAE. With us, you're not just purchasing components; you're investing in a partnership of trust, reliability, and unmatched quality.</p>
+               <p class="text-justify" style ="color: rgba(255, 255, 255, 0.589);">Light up your projects with premium-grade electrical components.  <b>For more information or to schedule a service, please <a href="contact.html" style="color: blue;" >Contact Us</a> today.</b></p>
             </div>
          </div>
-      </section>-->
+      </section>
       <!-- fact__area end -->
 
       <!-- blog__area start -->

@@ -25,6 +25,37 @@
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <style>
+         /* external css: flickity.css */
+         /* external css: flickity.css */
+         .carousel {
+            background: #fafafa00;
+            margin-top : 35px;
+            margin-bottom: 30px;
+         }
+
+         .carousel-cell {
+            width: 100%;
+            height: 400px; /* Set the desired height here */
+            overflow: hidden; /* This will ensure images exceeding the dimensions will be hidden */
+            border-radius: 10px;
+            position: relative;
+         }
+
+         .carousel-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .font-weight-bold{
+            font-weight: 700;
+         }
+      </style>
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -73,7 +104,7 @@ THERE WE DIFFER</span>
                <div class="row">
                   <div class="col-xl-4 col-lg-3">
                      <div class="header__logo-overlay">
-                        <a href="index.html"><img style="width:85%;" src="assets/img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img style="width:85%; margin: 10px;" src="assets/img/logo.png" alt="logo"></a>
                      </div>
                   </div>
                   <div class="col-xl-8 col-lg-9">
@@ -83,7 +114,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-location-pin"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="https://goo.gl/maps/2McRmWEFCW8nj9p16" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
+                              <h4><a href="https://goo.gl/maps/S3aZSwDtRBrAiTZj9" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
                               <span>Contact Us</span>
                            </div>
                         </div>
@@ -92,7 +123,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-telephone-call"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="tel:+78690989067">0505634247/ 0543397992</a></h4>
+                              <h4><a href="tel:+0505634247">0505634247/ 0543397992</a></h4>
                               <span>Get Support</span>
                            </div>
                         </div>
@@ -287,26 +318,56 @@ Abudhabi, UAE</a>
          <div class="container">
             <div class="row">
                <div class="col-xl-6 col-lg-6">
-                  <div class="fact__image w-img">
-                     <img src="assets/img/fact/fact-image2.jpg" alt="fact-img">
+                  <div class="carousel"
+                           data-flickity='{ "draggable": true ,"lazyLoad": 1, "wrapAround": true, "autoPlay": 1500 }'> 
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Valves&Fangs/values4.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Valves&Fangs/values1.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Valves&Fangs/values2.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Valves&Fangs/values3.jpg" alt="fact-img">
+                     </div>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="fact__info">
                      <div class="section__wrapper section__wrapper-3 mb-70">
-                        <h4 class="section__title">Valves & Flanges 
- </h4>
-						<P> <p>Valves and flanges are important components used in industrial applications to control the flow of fluids or materials and to create secure connections between pipes, hoses, and equipment. Here's an overview of valves and flanges.</p>
+                        <h4 class="section__title">Safety Power UAE: Pioneers in Precision - Valves & Flanges</h4>
+                        <p class="lead">In the intricate maze of industrial setups, the veins and joints that keep everything flowing and connected are none other than valves and flanges. These seemingly simple components carry a world of responsibility. In the bustling industry sectors of the UAE and the broader GCC region, Safety Power stands as a beacon of quality and reliability for these crucial components.</p>
+                        
                         <div class="r-text">
-                       
+                          
                         </div>
                      </div>
                      
+                     
                   </div>
                </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <h2 class="section__title" style="color: rgba(255, 239, 218, 0.633);">Valves: <span style="font-size: 25px;">The Heartbeats of Fluid Flow</span></h2>
+                     <p style="color: rgba(255, 255, 255, 0.589);">Imagine a heart, rhythmically pumping, deciding the pace, and directing the flow. That's what valves do for our industrial setups. Whether by hand or automation, valves control, guide, and ensure the seamless flow of fluids. From the gentlest trickle to the most forceful gush, they're the silent sentinels ensuring everything flows just right.</p>
+                  </div>
+                  <div class="col-md-6">
+                     <h2 class="section__title" style="color: rgba(255, 239, 218, 0.633);">Flanges: <span style="font-size: 25px;">The Unsung Connectors</span></h2>
+                     <p style="color: rgba(255, 255, 255, 0.589);">In the tales of pipelines and equipment, flanges are the unsung heroes, creating connections that last. They are the handshake between two pipeline sections, ensuring a bond that's not only strong but leak-proof. With flanges, assembly and disassembly become a walk in the park, making maintenance a breeze.</p>
+                  
+                  </div>
+               </div>
+               <h4 style="color: rgba(255, 239, 218, 0.633);">The Safety Power Assurance</h4>
+               <p style ="color: rgba(255, 255, 255, 0.589);">In a constantly evolving industrial landscape, we've held our ground, not just as traders but as innovators. Our commitment to excellence is unwavering, and our drive to serve is unparalleled. Every valve, every flange, is a testament to our promise of precision.
+
+                  So, when it comes to valves and flanges in the UAE and GCC countries, think Safety Power. Because with us, it's not just about a purchase; it's about forging partnerships built on trust, quality, and dedication.</p>
+               <p class="text-justify" style ="color: rgba(255, 255, 255, 0.589);">Discover unparalleled precision in valves & flanges with Safety Power UAE <b>For more information or to schedule a service, please <a href="contact.html" style="color: blue;" >Contact Us</a> today.</b></p>
+            
             </div>
          </div>
-      </section>-->
+      </section>
       <!-- fact__area end -->
 
       <!-- blog__area start -->

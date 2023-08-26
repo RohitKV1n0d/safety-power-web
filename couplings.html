@@ -25,6 +25,39 @@
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <style>
+         /* external css: flickity.css */
+         /* external css: flickity.css */
+         .carousel {
+            background: #fafafa00;
+            margin-top : 35px;
+            margin-bottom: 30px;
+         }
+
+         .carousel-cell {
+            width: 100%;
+            height: 500px; /* Set the desired height here */
+            overflow: hidden; /* This will ensure images exceeding the dimensions will be hidden */
+            border-radius: 10px;
+            position: relative;
+         }
+
+         .carousel-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .font-weight-bold{
+            font-weight: 700;
+         }
+
+         
+      </style>
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -73,7 +106,7 @@ THERE WE DIFFER</span>
                <div class="row">
                   <div class="col-xl-4 col-lg-3">
                      <div class="header__logo-overlay">
-                        <a href="index.html"><img style="width:85%;" src="assets/img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img style="width:85%; margin: 10px;" src="assets/img/logo.png" alt="logo"></a>
                      </div>
                   </div>
                   <div class="col-xl-8 col-lg-9">
@@ -83,7 +116,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-location-pin"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="https://goo.gl/maps/2McRmWEFCW8nj9p16" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
+                              <h4><a href="https://goo.gl/maps/S3aZSwDtRBrAiTZj9" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
                               <span>Contact Us</span>
                            </div>
                         </div>
@@ -92,7 +125,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-telephone-call"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="tel:+78690989067">0505634247/ 0543397992</a></h4>
+                              <h4><a href="tel:+0505634247">0505634247/ 0543397992</a></h4>
                               <span>Get Support</span>
                            </div>
                         </div>
@@ -283,30 +316,63 @@ Abudhabi, UAE</a>
      
 
       <!-- fact__area start -->
-    <section class="fact__area fact__bg pt-120 pb-120">
+      <section class="fact__area fact__bg pt-120 pb-120">
          <div class="container">
             <div class="row">
                <div class="col-xl-6 col-lg-6">
-                  <div class="fact__image w-img">
-                     <img src="assets/img/fact/fact-image1.jpg" alt="fact-img">
+                  <div class="carousel"
+                           data-flickity='{ "draggable": true ,"lazyLoad": 1, "wrapAround": true, "autoPlay": 1500 }'> 
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/fact/fact-image1.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Couplings&Fittings/Couplings&Fittings5.webp" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Couplings&Fittings/Couplings&Fittings1.webp" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Couplings&Fittings/Couplings&Fittings2.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/Couplings&Fittings/Couplings&Fittings3.jpg" alt="fact-img">
+                     </div>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="fact__info">
                      <div class="section__wrapper section__wrapper-3 mb-70">
-                        <h4 class="section__title">Couplings & Fittings 
- </h4>
-						<P> <p>Couplings are connectors that join two hoses or connect a hose to a piece of equipment. They ensure a tight seal and enable the transfer of fluids or materials without leakage..</p>
+                        <h4 class="section__title">Safety Power UAE: Precision in Every Connection - Couplings & Fittings</h4>
+                        <p class="lead">In the vast orchestra of industrial operations, the unsung heroes are often the connectors that hold everything together. These critical components, namely couplings and fittings, ensure fluidity and seamless efficiency in various processes. For industries operating in the UAE and the broader GCC region, Safety Power remains the name synonymous with quality, reliability, and precision in couplings and fittings.</p>
+                        
                         <div class="r-text">
-                       
+                          
                         </div>
                      </div>
                      
+                     
                   </div>
                </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <h2 class="section__title" style="color: rgba(255, 239, 218, 0.633);">Couplings: <span style="font-size: 25px;"> The Art of Perfect Joining</span></h2>
+                     <p style="color: rgba(255, 255, 255, 0.589);">Couplings play a pivotal role in ensuring that there's never a missed beat in the industrial rhythm. They act as connectors, joining two hoses or establishing a link between a hose and a crucial piece of equipment. More than just a joining tool, they ensure that the transfer of fluids or materials remains uninterrupted and free from any leakage. They represent the strength and tightness of bonds, both metaphorically and practically.</p>
+                  </div>
+                  <div class="col-md-6">
+                     <h2 class="section__title" style="color: rgba(255, 239, 218, 0.633);">Fittings: <span style="font-size: 25px;"> The Unsung Masters of Efficiency</span></h2>
+                     <p style="color: rgba(255, 255, 255, 0.589);">Every system, no matter how advanced, is only as efficient as its smallest component. Fittings might be these smaller components, but their importance is monumental. They stand as gatekeepers, ensuring that every connection is secure, every flow is regulated, and every operation remains leak-free.</p>
+                  
+                  </div>
+               </div>
+               <h4 style="color: rgba(255, 239, 218, 0.633);">The Safety Power Assurance</h4>
+               <p style ="color: rgba(255, 255, 255, 0.589);">Amidst the constantly shifting terrains of the industrial sector, Safety Power stands firm, rooted in its promise of quality and commitment. Every coupling, every fitting, is more than just a product—it's a statement of our unwavering dedication to excellence.
+
+                  For all your coupling and fitting requirements in the UAE and GCC regions, remember Safety Power UAE. Because with us, you're not just making a purchase; you're entering a partnership of trust, expertise, and unmatched quality.</p>
+               <p class="text-justify" style ="color: rgba(255, 255, 255, 0.589);">Experience the pinnacle of secure connections with Couplings & Fittings at Safety Power UAE.  <b>For more information or to schedule a service, please <a href="contact.html" style="color: blue;" >Contact Us</a> today.</b></p>
+            
             </div>
          </div>
-      </section>-->
+      </section>
       <!-- fact__area end -->
 
       <!-- blog__area start -->

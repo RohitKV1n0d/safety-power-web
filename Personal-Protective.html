@@ -24,6 +24,39 @@
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <style>
+         /* external css: flickity.css */
+         /* external css: flickity.css */
+         .carousel {
+            background: #fafafa00;
+            margin-top : 35px;
+            margin-bottom: 30px;
+         }
+
+         .carousel-cell {
+            width: 100%;
+            height: 500px; /* Set the desired height here */
+            overflow: hidden; /* This will ensure images exceeding the dimensions will be hidden */
+            border-radius: 10px;
+            position: relative;
+         }
+
+         .carousel-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .font-weight-bold{
+            font-weight: 700;
+         }
+
+         
+      </style>
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -72,7 +105,7 @@ THERE WE DIFFER</span>
                <div class="row">
                   <div class="col-xl-4 col-lg-3">
                      <div class="header__logo-overlay">
-                        <a href="index.html"><img style="width:85%;" src="assets/img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img style="width:85%; margin: 10px;" src="assets/img/logo.png" alt="logo"></a>
                      </div>
                   </div>
                   <div class="col-xl-8 col-lg-9">
@@ -82,7 +115,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-location-pin"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="https://goo.gl/maps/2McRmWEFCW8nj9p16" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
+                              <h4><a href="https://goo.gl/maps/S3aZSwDtRBrAiTZj9" target="_blank"> Al-Dhannah Gayathi, Ruwais Abudhabi, UAE</a></h4>
                               <span>Contact Us</span>
                            </div>
                         </div>
@@ -91,7 +124,7 @@ THERE WE DIFFER</span>
                               <i class="flaticon-telephone-call"></i>
                            </div>
                            <div class="sm-clist__text">
-                              <h4><a href="tel:+78690989067">0505634247/ 0543397992</a></h4>
+                              <h4><a href="tel:+0505634247">0505634247/ 0543397992</a></h4>
                               <span>Get Support</span>
                            </div>
                         </div>
@@ -282,30 +315,57 @@ Abudhabi, UAE</a>
      
 
       <!-- fact__area start -->
-    <section class="fact__area fact__bg pt-120 pb-120">
+      <section class="fact__area fact__bg pt-120 pb-120">
          <div class="container">
             <div class="row">
                <div class="col-xl-6 col-lg-6">
-                  <div class="fact__image w-img">
-                     <img src="assets/img/fact/fact-image4.jpg" alt="fact-img">
+                  <div class="carousel"
+                           data-flickity='{ "draggable": true ,"lazyLoad": 1, "wrapAround": true, "autoPlay": 1500 }'> 
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/fact/fact-image4.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/PersonalProtectiveEquipment/ppe2.jpg" alt="fact-img">
+                     </div>
+                     <div class="carousel-cell">
+                        <img data-flickity-lazyload="assets/img/PersonalProtectiveEquipment/ppe3.jpg" alt="fact-img">
+                     </div>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="fact__info">
                      <div class="section__wrapper section__wrapper-3 mb-70">
-                        <h4 class="section__title">Personal-Protective
- </h4>
-						<P> <p>Cables, trays, gratings, and similar components are commonly used in industrial settings to manage and organize electrical cables, provide support and protection, and ensure a safe working environment.</p>
+                        <h4 class="section__title">Safety Power UAE: Shielding You with Excellence - Personal Protective Equipment (PPE) </h4>
+                        <p class="lead">In the vast arena of industrial and commercial environments, where every task has its inherent risks, the armor that stands between potential harm and the individual is the Personal Protective Equipment (PPE). Safety Power UAE takes immense pride in being the trusted supplier of this armor to numerous industries across the region.</p>
+                        
                         <div class="r-text">
-                       
+                          
                         </div>
                      </div>
                      
+                     
                   </div>
                </div>
+               <div class="row">
+                  <div class="col-md-7">
+                     <h2 class="section__title" style="color: rgba(255, 239, 218, 0.633);">PPE: The Silent Guardian of the Workplace</h2>
+                     <div class="industrial-hoses-about" >
+                        <p style="color: rgba(255, 255, 255, 0.589);">More than just equipment or attire, PPE is the unseen guardian in the hustle and bustle of busy work settings. Whether it's protecting a worker from a chemical spill, shielding eyes from sparks, or ensuring lungs aren't exposed to harmful particles, PPE stands tall as the first and often most crucial line of defense. Every piece, every component of PPE, is meticulously designed to ward off potential hazards and keep the wearer safe from injuries and illnesses.</p>
+                        <h3  style="margin-left: 15px; color: rgba(255, 239, 218, 0.633);">The Safety Power Commitment</h3>
+                        <p style ="color: rgba(255, 255, 255, 0.589);">In a world where risks are omnipresent, Safety Power UAE has carved a niche as a beacon of trust and quality in the realm of PPE trading. Our dedication isn't just to products but to the very ethos of safety. Every piece of equipment, every attire, stands as a testament to our unwavering dedication to guarding against potential harm.
+
+                           For comprehensive, trusted, and quality-driven PPE solutions in the UAE and GCC regions, make Safety Power UAE your partner. Because with us, you're not just procuring safety equipment; you're reinforcing a promise of protection and well-being.</p>
+                    
+                     </div>
+                  </div>
+                  <div class="col-md-5">
+                     <img src="http://www.mnltap.umn.edu/topics/workplace/personal_protection_equipment/images/PPE_person.jpg" alt="" style="width: 100%; border-radius: 10px; margin-top: 79px; margin-bottom: 15px;">
+                  </div>
+               </div>
+               <p class="text-justify" style ="color: rgba(255, 255, 255, 0.589);">Prioritize safety and embrace excellence with our range of Personal Protective Equipment.  <b><a href="contact.html" style="color: blue;" >Connect</a>  with Safety Power UAE today for comprehensive PPE solutions that shield and secure.</b></p>
             </div>
          </div>
-      </section>-->
+      </section>
       <!-- fact__area end -->
 
       <!-- blog__area start -->
