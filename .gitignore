@@ -1,2 +1,3 @@
 *.zip
 extras
+.DS_Store
