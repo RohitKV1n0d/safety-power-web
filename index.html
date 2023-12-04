@@ -482,6 +482,28 @@
       </section>
       <!-- about__area end -->
 
+      <style>
+         .project__info-image {
+            height: 600px; /* or any desired height */
+            overflow: hidden; /* This hides the overflow */
+            display: flex; /* Using Flexbox */
+            justify-content: center; /* Center image horizontally */
+            align-items: center; /* Center image vertically */
+            position: relative; /* Positioning context for the image */
+         }
+
+         .project__info-image img {
+            width: 100%; /* Full width of the container */
+            height: 100%; /* Full height of the container */
+            object-fit: cover; /* This prevents the image from stretching */
+            transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+         }
+
+         .project__info-image img:hover {
+            transform: scale(1.2); /* Zooms in the image by 20% on hover */
+         }
+
+      </style>
       <!-- project__area start -->
       <div class="project__area fix">
          <div class="project__inner">
