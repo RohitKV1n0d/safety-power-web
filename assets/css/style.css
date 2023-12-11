@@ -2274,6 +2274,18 @@ input[type=color] {
   position: relative;
   margin-right: 60px;
 }
+.header__socials{
+  color: white;
+
+}
+.header__links_icon{
+  padding-right: 3px;
+  font-size: 25px;
+}
+.header__links_icon:hover{
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.589);
+}
 .header__sm-links::before {
   position: absolute;
   content: "";
