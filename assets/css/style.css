@@ -8214,4 +8214,12 @@ input[type=color] {
   font-size: 15px;
   color: #2a2a2a !important;
 } 
+.nexeor-tag{
+  display: block;
+}
+}
+
+.nexeor-link:hover{
+  color: #00bfff7b !important;
+  transition: 0.3s;
 }
